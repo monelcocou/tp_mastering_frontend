@@ -5,20 +5,21 @@
 
 :root{
     --primary : #1d1d1d;
-    --secondary: white
+    --secondary: white;
+    --tertiairy: #0d0d0d;
 }
 
 
 
 body{
     background: var(--primary);
+    font-family: "Inter", Verdana, "Sans Serif Collection";
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     color: var(--secondary);
-    font-family: "Inter", Verdana, "Sans Serif Collection";
     margin: 20px;
 }
 
@@ -35,13 +36,12 @@ nav li{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    padding: 20px;
-    margin-top: 40px;
+    align-items: center;
 }
 
 .header-left{
     width: 50%;
+    padding: 30px;
 }
 
 .header-right{
@@ -52,9 +52,63 @@ header{
 .header-left h1{
     font-size: 5rem;
     color: var(--secondary);
-    font-family: "Inter", Verdana, "Sans Serif Collection";
+}
+
+.header-left h3{
+    font-size: 1.5rem;
+    color: blue;
+}
+
+.header-left p{
+    color: var(--secondary);
+}
+
+.header-left-container{
+
 }
 
 img{
     width: 100%;
+}
+
+
+.infos{
+    background: var(--tertiairy);
+    color: var(--secondary);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.infos-left{
+    width: 30%;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 130px;
+}
+
+.btn-container button{
+    background: blue;
+    color: var(--secondary);
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.infos-right{
+    width: 70%;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-container img{
+    width: 70px;
 }
