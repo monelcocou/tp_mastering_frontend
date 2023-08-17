@@ -1,12 +1,111 @@
-
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Medium.ttf);
+}
+:root{
+    /*--primary : #1d1d1d;*/
+    /*--secondary: white;*/
+    /*--tertiairy: #0d0d0d;*/
+    /*--bleu: blue;*/
+}
 *{
     margin: 0;
-    padding: 5px;
     box-sizing: border-box;
+    padding: 5px;
 }
 li{
     list-style: none;
+    font-size: 0.7rem;
+}
+nav{
+    padding: 10px;
 }
 body{
+    font-family: "Montserrat", sans-serif;
     min-height: 100vh;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+nav li:hover{
+    color: purple;
+}
+#language{
+    background: darkgrey;
+    border-radius: 150px;
+}
+header{
+    background: url("./assets/img/bg.jpg") no-repeat center/cover;
+    padding: 30px;
+    height: 100%;
+}
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    gap: 10px;
+}
+.main-header p{
+    font-size: 5rem;
+}
+.main-header h1{
+    color: rgb(245,245,245);
+    font-size: 1rem;
+}
+.main-header button, .box-gaming button{
+    background: transparent;
+    color: rgb(245,245,245);
+    font-size: 0.6rem;
+    font-weight: bold;
+    border: rgb(225,245,245) solid 1px;
+    padding: 3px 15px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+.header-text{
+    margin: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.gaming-modules{
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gaming_module_container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.box-gaming{
+    padding: 20px;
+}
+.box-gaming h3{
+    margin-top: 10px;
+}
+.box-gaming p{
+    font-size: 0.7rem;
+    width: 60%;
+    margin: 20px auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-align: center;
+}
+.box-gaming button{
+    font-size: 0.7rem;
 }
