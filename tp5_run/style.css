@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "Montserrat Thin";
+    src: url(./assets/fonts/Montserrat-Thin.ttf);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+}
+button{
+    text-transform: uppercase;
+    background: white;
+    border-radius: 30px;
+    border: gray solid 1px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-family: "Montserrat", sans-serif;
+}
+p{
+    line-height: 30px;
+    text-align: justify;
+    font-size: 1rem;
+}
+.banner-run{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+}
+.right-run-part{
+    background: url("./assets/img/banner.jpg") center/cover;
+}
+.left-run-part{
+    padding: 0 40px;
+    margin: auto 0;
+}
+.left-run-part-container{
+}
+.banner-magna{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 400px;
+}
+.left-part-magna{
+    background: url("./assets/img/img-left.jpg") center/cover;
+    width: 100%;
+}
+.right-part-magna{
+    margin: auto 0;
+    padding: 0 40px;
+}
+.banner-tempus{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 400px;
+}
+.left-part-tempus{
+    margin: auto 0;
+    padding: 0 40px;
+}
+.right-part-tempus{
+    background: url("./assets/img/img-right.jpg") center/cover;
+    width: 100%;
+}
+.form h2{
+    text-align: center;
+    margin: 40px 0 25px;
+}
